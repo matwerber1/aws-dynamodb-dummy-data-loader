@@ -31,7 +31,7 @@ Resources:
     Properties:
       ServiceToken: !GetAtt DataLoaderProvider.Arn
       TableName: !Ref DemoTable
-      DummyPropertyToTriggerRefresh: 123    # change this to any new value to cause the Lambda to re-run
+      DummyPropertyToTriggerRefresh: 1234    # change this to any new value to cause the Lambda to re-run
 
   DemoTable:
     Type: AWS::DynamoDB::Table
