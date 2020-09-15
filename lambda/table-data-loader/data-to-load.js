@@ -49,4 +49,31 @@ exports.items = [
     state: 'AZ',
     effective_date: '2020-09-10',
   },
+  // Here, we model a mock sales order:
+  {
+    pk: 'customer_1',
+    sk: 'order_1',
+    order_cost: '120.99',
+    order_date: '2020-05-10',
+    ship_date: '2020-05-13'
+  },
+  // Below, we add the items for the order: 
+  {
+    pk: 'customer_1',
+    sk: 'order_1#item_1',
+    item_name: 'Dog treats',
+    item_sku: '1239383483',
+    quantity: 4,
+    unit_cost: 5.00,
+    total_cost: 20
+  },
+  {
+    pk: 'customer_1',
+    sk: 'order_1#item_2',
+    item_name: 'Mega dog house',
+    item_sku: '39488483',
+    quantity: 1,
+    unit_cost: 100.99,
+    total_cost: 100.99
+  },
 ];
